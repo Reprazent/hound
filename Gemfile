@@ -30,6 +30,7 @@ gem "sentry-raven"
 gem "stripe"
 gem "uglifier", ">= 1.0.3"
 gem "unicorn"
+gem "foreman"
 
 group :staging, :production do
   gem "rails_12factor"
@@ -37,10 +38,10 @@ end
 
 group :development, :test do
   gem "byebug"
-  gem "foreman"
   gem "konacha"
   gem "poltergeist"
   gem "rspec-rails", ">= 2.14"
+  gem "mina"
 end
 
 group :test do

@@ -120,6 +120,9 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.25.1)
+    mina (0.3.1)
+      open4 (~> 1.3.4)
+      rake
     mini_portile (0.6.0)
     minitest (5.4.0)
     multi_json (1.10.1)
@@ -151,6 +154,7 @@ GEM
       multi_json (~> 1.3)
       oauth2 (~> 1.0)
       omniauth (~> 1.2)
+    open4 (1.3.4)
     paranoia (2.0.2)
       activerecord (~> 4.0)
     parser (2.2.0.pre.4)
@@ -320,6 +324,7 @@ DEPENDENCIES
   jshintrb
   konacha
   launchy
+  mina
   neat
   newrelic_rpm
   octokit
