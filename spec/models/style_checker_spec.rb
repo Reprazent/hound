@@ -22,8 +22,7 @@ describe StyleChecker, "#violations" do
 
     violation_messages = StyleChecker.new(pull_request).violations.
       flat_map(&:messages)
-
-    expect(violation_messages).to eq expected_violations
+    expect(violation_messages).to include(*expected_violations)
   end
 
   context "for a Ruby file" do
@@ -35,7 +34,7 @@ describe StyleChecker, "#violations" do
         violations = StyleChecker.new(pull_request).violations
         messages = violations.flat_map(&:messages)
 
-        expect(messages).to eq ["Trailing whitespace detected."]
+        expect(messages).to include("Trailing whitespace detected.")
       end
     end
 
