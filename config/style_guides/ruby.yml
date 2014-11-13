@@ -221,6 +221,8 @@ Style/PercentLiteralDelimiters:
 # Configuration parameters: NamePrefix, NamePrefixBlacklist.
 Style/PredicateName:
   Enabled: true
+  NamePrefixBlacklist:
+    - is_
 
 # Configuration parameters: SupportedStyles.
 Style/RaiseArgs:
@@ -322,7 +324,7 @@ Style/StringLiterals:
 # Cop supports --auto-correct.
 # Configuration parameters: IgnoredMethods.
 Style/SymbolProc:
-  Enabled: true
+  Enabled: false
 
 # Cop supports --auto-correct.
 Style/Tab:
@@ -349,3 +351,37 @@ Style/WhileUntilDo:
 # Configuration parameters: WordRegex.
 Style/WordArray:
   MinSize: 51
+
+# Taken from the default hound styleguide
+SingleLineBlockParams:
+  Enabled: false
+
+Style/OneLineConditional:
+  Enabled: false
+
+Style/WhileUntilModifier:
+  Enabled: false
+
+PercentLiteralDelimiters:
+  Enabled: false
+
+RegexpLiteral:
+  Enabled: false
+
+Style/FileName:
+  Enabled: false
+
+Style/CollectionMethods:
+  Enabled: true
+  PreferredMethods:
+    collect: 'map'
+    collect!: 'map!'
+    reduce: 'inject'
+    find: 'detect'
+    find_all: 'select'
+
+Style/DotPosition:
+  EnforcedStyle: trailing
+  SupportedStyles:
+    - leading
+    - trailing

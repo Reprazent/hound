@@ -28,8 +28,8 @@ describe StyleGuide::Ruby, "#violations_in_file" do
     end
 
     describe "for trailing commas" do
-      it "returns no violations" do
-        expect(violations_in(<<-CODE)).to eq []
+      it "returns violations" do
+        expect(violations_in(<<-CODE)).not_to be_empty
           _one = [
             1,
           ]
@@ -46,7 +46,7 @@ describe StyleGuide::Ruby, "#violations_in_file" do
     describe "for single line conditional" do
       it "returns no violations" do
         expect(violations_in(<<-CODE)).to eq []
-if signed_in? then redirect_to dashboard_path end
+redirect_to dashboard_path if signed_in?
 
 while signed_in? do something end
         CODE
