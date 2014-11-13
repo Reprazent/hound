@@ -138,6 +138,7 @@ Style/EmptyLinesAroundModuleBody:
 # Configuration parameters: EnforcedStyle, SupportedStyles.
 Style/FormatString:
   Enabled: true
+  EnforcedStyle: percent
 
 # Configuration parameters: MinBodyLength.
 Style/GuardClause:
