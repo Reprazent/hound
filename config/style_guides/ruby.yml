@@ -249,6 +249,7 @@ Style/Semicolon:
 # Configuration parameters: EnforcedStyle, SupportedStyles.
 Style/SignalException:
   Enabled: true
+  SupportedStyles: semantic
 
 # Configuration parameters: Methods.
 Style/SingleLineBlockParams:
