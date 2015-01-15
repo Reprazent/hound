@@ -168,7 +168,10 @@ Style/IndentationWidth:
 # Cop supports --auto-correct.
 # Configuration parameters: SupportedStyles.
 Style/LambdaCall:
-  EnforcedStyle: braces
+  EnforcedStyle: call
+  Description: 'Use lambda.call(...) instead of lambda.(...).'
+  StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#proc-call'
+  Enabled: true
 
 # Cop supports --auto-correct.
 Style/LeadingCommentSpace:
