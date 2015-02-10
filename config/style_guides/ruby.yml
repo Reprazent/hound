@@ -1,5 +1,7 @@
 AllCops:
   Exclude:
+    - 'db/**/*'
+    - 'config/**/*'
     - db/schema.rb
 
 # Configuration parameters: AllowSafeAssignment.
