@@ -383,6 +383,7 @@ Style/CollectionMethods:
     collect: 'map'
     collect!: 'map!'
     reduce: 'inject'
+    each_with_object: "inject"
     find: 'detect'
     find_all: 'select'
 
