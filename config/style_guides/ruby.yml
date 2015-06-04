@@ -378,7 +378,6 @@ Style/FileName:
   Enabled: false
 
 Style/CollectionMethods:
-  Enabled: true
   PreferredMethods:
     collect: 'map'
     collect!: 'map!'
